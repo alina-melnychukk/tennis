@@ -1,0 +1,304 @@
+@media (max-width: 667px) {
+    .section__shop {
+        flex-direction: column;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            'text  '
+            'img1  '
+            'img2 '
+            'img2 '
+            'img3 '
+            'img4 ';
+    }
+    .section__custom--left {
+        max-width: 400px;
+    }
+    .section__custom--right {
+        max-width: 400px;
+    }
+    .right__hockey {
+        flex-direction: column-reverse;
+    }
+    .btn__left--color {
+        margin-bottom: 80px;
+    }
+    .right__hockey > div {
+        margin-bottom: 80px;
+    }
+    .section_about > div > p {
+        margin-top: 3rem;
+        font-size: 20px;
+    }
+    .section_about > div > h3 {
+        font-size: 40px;
+    }
+    .section_about {
+        padding: 70px 41px;
+    }
+    .section__img {
+        padding: 60px 40px;
+    }
+    .footer--padding {
+        padding: 40px 40px 26px 40px;
+    }
+    .section__Ringette--Hockey {
+        padding: 120px 40px;
+    }
+    .description > .container--my > div > h2 {
+        font-size: 2.1rem;
+    }
+
+    .slider {
+        margin-bottom: 1rem;
+    }
+
+    .arrows {
+        margin: -49% 0 0 0;
+        height: 163px;
+    }
+    .dots label {
+        width: 61px;
+        height: 12px;
+    }
+    .slider--img {
+        width: 80%;
+        height: 400px;
+    }
+    .item__description > h2 {
+        font-size: 45px;
+    }
+    .section__Ringette--Hockey {
+        padding: 80px 20px;
+    }
+}
+
+@media (max-width: 610px) {
+    .customHockey--fon {
+        top: 39%;
+    }
+    .customization {
+        margin-top: 79px;
+    }
+    .custom__panel--Color__scheme > .container--my {
+        gap: 20px;
+    }
+    .custom__panel--Color__scheme__color {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 570px) {
+    .section__product {
+        justify-items: center;
+    }
+
+    .custom__panel--Curve > .container--my {
+        padding: 10px;
+    }
+
+    .custom__panel--Length > .container--my {
+        padding: 10px;
+    }
+
+    .product > div {
+        align-items: normal;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .product > div > a {
+        justify-content: center;
+    }
+    .custom__panel--Color__scheme--color {
+        padding: 20px;
+    }
+    .custom__panel--Length > .container--my {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 5px;
+        align-content: space-evenly;
+    }
+    .custom__panel--Curve > .container--my {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 5px;
+        align-content: space-evenly;
+    }
+    .custom__panel--tablet > a {
+        font-size: 1rem;
+    }
+    .customization__top > h3 {
+        font-size: 1.7em;
+    }
+}
+
+@media (max-width: 550px) {
+    .section__custom--left {
+        max-width: 320px;
+        max-height: 191px !important;
+    }
+    .section__custom--right {
+        max-width: 320px;
+        max-height: 191px;
+    }
+    .section__custom--fon > div:last-child > img {
+        left: 25%;
+        top: 73%;
+    }
+
+    .section__custom--left:hover {
+        font-size: 1.2em;
+    }
+    .section__custom--right:hover {
+        font-size: 1.2em;
+    }
+    .section__custom--fon > div {
+        max-height: 202px !important;
+    }
+    .section__custom {
+        padding: 60px 30px 120px 30px;
+    }
+    .section__custom--fon {
+        height: 410px;
+    }
+    .item__description > h2 {
+        font-size: 35px;
+    }
+    .custom__panel--Flex__text {
+        font-size: 0.98rem;
+        align-items: center;
+    }
+}
+
+@media (max-width: 470px) {
+    .custom__panel--Flex__text {
+        text-align: center;
+    }
+    .section__custom--left {
+        position: unset;
+    }
+    .section__custom--right {
+        position: unset;
+    }
+    .custom__panel--Shaft__texture__btn {
+        font-size: 0.7rem;
+        padding: 8px 5px;
+    }
+    .custom__panel--Shaft__texture--color {
+        padding: 7px;
+    }
+    .custom__panel--Length > div > label {
+        font-size: 0.9em;
+    }
+    .custom__panel--Curve > div > label {
+        font-size: 0.9em;
+        padding: 9.5px 6.5px;
+    }
+    .custom__panel--Flex__line {
+        font-size: 0.9rem;
+        padding: 8.5px 28px;
+    }
+
+    .custom__panel--Flex__text {
+        font-size: 0.9rem;
+    }
+    .custom__panel--Kick__point__btn {
+        padding: 9.5px 6.5px;
+        font-size: 0.8rem;
+    }
+    .custom__panel--Shaft__shape__btn {
+        padding: 9.5px 6.5px;
+        font-size: 0.8rem;
+    }
+    .custom__panel--Color__scheme--color {
+        padding: 18px;
+    }
+    .custom__panel--Curve > div > label {
+        font-size: 0.8rem;
+    }
+    .custom__panel--Length > div > label {
+        padding: 9.5px 6.5px;
+        font-size: 0.8rem;
+    }
+    .custom__Buy > a {
+        padding: 8px 60px;
+    }
+    .customHockey--fon {
+        top: 37%;
+    }
+    .custom__panel--Shaft__Name__and__number > .container--my {
+        padding: 10px;
+    }
+}
+@media (max-width: 440px) {
+    .arrows {
+        height: 158px;
+        margin: -62% 0 0 0;
+    }
+    .custom__panel--tablet > a {
+        font-size: 0.8rem;
+    }
+
+    .section__item a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .burger > img {
+        width: 40px !important;
+    }
+    .custom__panel--Flex__text {
+        margin-right: 6px;
+    }
+    .custom__panel--Flex > .container--my {
+        grid-template-areas:
+            'btn length sr'
+            'check check check';
+    }
+    .custom__panel--Flex > .container--my > .custom__panel--Flex__line {
+        grid-area: btn;
+    }
+    .custom__panel--Flex > .container--my > a {
+        grid-area: sr;
+    }
+    .custom__panel--Flex > .container--my > label:first-child {
+        grid-area: length;
+    }
+    .custom__panel--Flex > .container--my > label:last-child {
+        grid-area: check;
+    }
+}
+@media (max-width: 380px) {
+    .product > div > a {
+        font-size: 0.5em;
+    }
+    .product > a > p {
+        font-size: 0.7em;
+    }
+    .product > a {
+        gap: 6px;
+    }
+    .product > div {
+        margin-top: 10px;
+    }
+    .product > div > a > img {
+        width: 20px;
+    }
+    .arrows {
+        height: 157px;
+        margin: -56% 0 0 0;
+    }
+    .dots label {
+        width: 50px;
+        height: 10px;
+    }
+    .slider--img {
+        height: 320px;
+    }
+}

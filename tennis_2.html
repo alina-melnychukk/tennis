@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TennisLab</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="tw.css" />
+        <link rel="stylesheet" href="tablet.css" />
+        <link rel="stylesheet" href="mobile.css" />
+        <script src="item.js" defer></script>
+        <script src="tennisBasket.js" defer></script>
+
+    </head>
+    <body>
+        <header>
+            <div class="container--my">
+                <div class="header__logo">
+                    <a href="index.html" class="header__logo--tennis">
+                        <img src="img/logoTennis.png" alt="logo" />
+                    </a>
+                    <a href="basket.html"> <img src="img/ph_basket.png" width="45" alt="" /> </a>
+                </div>
+                <div>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="HockeySticksProduct.html">Каталог</a></li>
+                            <li class="nav--2"><a href="customRingette.html">Створити ракетку</a></li>
+                            <li class="nav--5"><a href="index.html#aboutUs">Про нас</a></li>
+                            <li><a href="#contact">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="pageItem">
+            <div class="container--my">
+                <div class="container__pageItem"><a href="HockeySticksProduct.html">Каталог /</a> <span>BlazeCore ProTour 100</span></div>
+            </div>
+        </div>
+        <section class="section__item">
+            <div class="container--my">
+                <div class="flex pb-64 pt-14">
+                    <div class="w-2/5 flex-column gap-y-12">
+                        <img src="img/category_2.png" alt="" />
+                        <div class="grid grid-cols-2 gap-y-12 mt-12 item__img"><img src="img/category_2.png" style="transform: rotate(71deg)" alt="" /></div>
+                    </div>
+                    <div class="tennis__img" style="display: flex; justify-content: center">
+                        <img class="" src="img/category_2.png" />
+                    </div>
+                    
+                    <div class="w-3/5 item__description">
+                        <h2 class="title">BlazeCore ProTour 100</h2>
+                        <span class="price">3250 грн</span>
+                        <p class="mt-5">Сторона</p>
+                        <div class="flex gap-6 item__flex mt-4">
+                            <a id="flex_71" class="pt-3 pb-3 pr-8 pl-8 border rounded-xl item__btn item__span--active" href=""> Ліва </a>
+                            <a id="flex_65" class="pt-3 pb-3 pr-8 pl-8 border rounded-xl" href=""> Права </a>
+                        </div>
+                        <p class="mt-5">Розмір ручки</p>
+                        <div class="flex gap-6 item__flex mt-4">
+                            <a id="curve_71" class="pt-3 pb-3 pr-8 pl-8 border rounded-xl item__btn item__span--active" href=""> L3 (4 3/8") </a>
+                            <a id="curve_65" class="pt-3 pb-3 pr-8 pl-8 border rounded-xl" href=""> L5 (4 5/8") </a>
+                        </div>
+                        <p class="mt-5 mb-5"></p>
+                        <div class="flex gap-28 content-center item__container__btn">
+                            <div class="item__flex">
+                                <a id="quantityMinus" class="pt-3 pb-3 pr-8 pl-8 border rounded-xl" href="">-</a>
+                                <div>
+                                    <a class="item__flex__counter" id="quantityCounter" href=""></a>
+                                </div>
+
+                                <a id="quantityPlus" class="pt-3 pb-3 pr-8 pl-8 border rounded-xl" href="">+</a>
+                            </div>
+                            <a class="item__container__btn__buy rad" href="##42324#"> Купити <img style="width: fit-content" src="img/system-uicons_cart.svg" alt="" /> </a>
+                        </div>
+                        <div class="flex flex-col gap-8 mt-6">
+                            <div class="flex flex-col gap-4">
+                                <h4 class="item--span">BlazeCore ProTour 100 — Потужність та точність для професіоналів</h4>
+                                <p>
+                                    BlazeCore ProTour 100 — це ракетка для справжніх професіоналів, які цінують потужність, точність і максимальний контроль у кожному ударі. Завдяки інноваційній технології BlazeCore ракетка забезпечує неймовірну стабільність навіть під час найінтенсивніших розіграшів, дозволяючи вам контролювати гру та задавати темп матчу.
+                                    Рамка ракетки виготовлена з високоякісного карбону, що додає легкості та підвищує маневреність, а ідеальний баланс між потужністю і контролем дозволяє досягати відмінних результатів як на задній лінії, так і на сітці.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="mb-4 item--span">Ключові особливості:</h4>
+                                <p>●<span class="item--span">Технологія BlazeCore для стабільності та контролю</p>
+                                <p>● <span class="item--span">Висока потужність і точність на всіх типах ударів</p>
+                                <p>● <span class="item--span">Легка і маневрена рама для швидких переміщень по корту</p>
+                                <p>● <span class="item--span">Ідеально підходить для гравців середнього та високого рівня</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="form-container" id="form-container" style="display: none;">
+            <div class="form-content">
+                <div>
+                    <button class="close-btn" id="close-btn">&times;</button>
+    
+                    </div>
+                <form id="order-form">
+                    <div>
+                        <label for="name">Ім'я</label>
+                        <input type="text" id="name" name="name" placeholder="Введіть імʼя" required>
+                    </div>
+
+                    <div>
+                        <label for="surname">Прізвище</label>
+                        <input type="text" id="surname" name="surname" placeholder="Введіть Прізвище"  required>
+                    </div>
+
+                    <div>
+                        <label for="phone">Номер телефону</label>
+                        <input type="text" id="phone" name="phone" placeholder="+38(0__)___-__-__" required>
+                    </div>
+
+                    <div id="form-message"></div>
+                    <button type="submit">Надіслати</button>
+                </form>
+                <div id="form-message"></div>
+            </div>
+        </div>
+        <footer id="contact">
+            <div class="footer--padding">
+                <div class="container--my">
+                    <div class="footer__navigation flex--gap">
+                        <li><a href="HockeySticksProduct.html">Каталог</a></li>
+                        <li class="nav--2"><a href="customRingette.html">Створити ракетку</a></li>
+                        <li class="nav--5"><a href="index.html#aboutUs">Про нас</a></li>
+                        <li><a href="#contact">Контакти</a></li>
+                    </div>
+                    <div class="footer__info">
+                        <div>
+                            <div class="flex--gap">
+                                <a href="">+380 (63) 648 36 11</a>
+                                <a href="">tennis@gmail.com</a>
+                            </div>
+                        </div>
+                        <a href="index.html">
+                            <img src="img/logoTennis.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
+
+<script>
+    // Показати форму при кліку на кнопку "Купити"
+    document.querySelector('.item__container__btn__buy').addEventListener('click', function() {
+        document.getElementById('form-container').style.display = 'flex';
+    });
+
+    // Закрити форму
+    document.getElementById('close-btn').addEventListener('click', function() {
+        document.getElementById('form-container').style.display = 'none';
+        document.getElementById('form-message').textContent = '';
+    });
+
+    // Валідація
+    function validateName(name) {
+        return /^[А-ЯІЇЄҐа-яіїєґ']{2,}$/.test(name);
+    }
+    function isUkrainianLetters(str) {
+        return /^[А-ЯІЇЄҐа-яіїєґ']*$/.test(str);
+    }
+    function validatePhone(phone) {
+        return /^\+?380\d{9}$/.test(phone);
+    }
+    function showFieldError(input, message) {
+        let err = input.parentElement.querySelector('.field-error');
+        if (!err) {
+            err = document.createElement('div');
+            err.className = 'field-error';
+            input.parentElement.appendChild(err);
+        }
+        err.textContent = message;
+        input.classList.add('error-input');
+    }
+    function clearFieldError(input) {
+        let err = input.parentElement.querySelector('.field-error');
+        if (err) err.remove();
+        input.classList.remove('error-input');
+    }
+
+    const nameInput = document.getElementById('name');
+    const surnameInput = document.getElementById('surname');
+    const phoneInput = document.getElementById('phone');
+    const formMessage = document.getElementById('form-message');
+
+    nameInput.addEventListener('input', function() {
+        if (this.value.length > 0 && this.value.length < 2) {
+            showFieldError(this, "Мінімум 2 українські літери");
+        } else if (this.value.length >= 2 && !isUkrainianLetters(this.value)) {
+            showFieldError(this, "Тільки українські літери");
+        } else if (this.value && !validateName(this.value)) {
+            showFieldError(this, "Тільки українські літери");
+        } else {
+            clearFieldError(this);
+        }
+    });
+    surnameInput.addEventListener('input', function() {
+        if (this.value.length > 0 && this.value.length < 2) {
+            showFieldError(this, "Мінімум 2 українські літери");
+        } else if (this.value.length >= 2 && !isUkrainianLetters(this.value)) {
+            showFieldError(this, "Тільки українські літери");
+        } else if (this.value && !validateName(this.value)) {
+            showFieldError(this, "Тільки українські літери");
+        } else {
+            clearFieldError(this);
+        }
+    });
+    phoneInput.addEventListener('input', function() {
+        if (this.value && !validatePhone(this.value)) showFieldError(this, "Формат: +380XXXXXXXXX");
+        else clearFieldError(this);
+    });
+
+    document.getElementById('order-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    let errors = 0;
+    formMessage.textContent = '';
+
+    if (!nameInput.value) { showFieldError(nameInput, "Це поле обов'язкове"); errors++; }
+    else if (nameInput.value.length < 2) { showFieldError(nameInput, "Мінімум 2 українські літери"); errors++; }
+    else if (!isUkrainianLetters(nameInput.value)) { showFieldError(nameInput, "Тільки українські літери"); errors++; }
+    else if (!validateName(nameInput.value)) { showFieldError(nameInput, "Тільки українські літери"); errors++; }
+    else clearFieldError(nameInput);
+
+    if (!surnameInput.value) { showFieldError(surnameInput, "Це поле обов'язкове"); errors++; }
+    else if (surnameInput.value.length < 2) { showFieldError(surnameInput, "Мінімум 2 українські літери"); errors++; }
+    else if (!isUkrainianLetters(surnameInput.value)) { showFieldError(surnameInput, "Тільки українські літери"); errors++; }
+    else if (!validateName(surnameInput.value)) { showFieldError(surnameInput, "Тільки українські літери"); errors++; }
+    else clearFieldError(surnameInput);
+
+    if (!phoneInput.value) { showFieldError(phoneInput, "Це поле обов'язкове"); errors++; }
+    else if (!validatePhone(phoneInput.value)) { showFieldError(phoneInput, "Формат: +380XXXXXXXXX"); errors++; }
+    else clearFieldError(phoneInput);
+
+    if (errors > 0) {
+        formMessage.textContent = 'Виправте помилки у формі!';
+        formMessage.className = 'error';
+        return;
+    }
+
+    // Получаем название и цену товара со страницы
+    const productTitle = document.querySelector('h2.title')?.textContent.trim() || 'Без назви';
+    const priceText = document.querySelector('span.price')?.textContent.trim() || '0 грн';
+    const productPrice = parseInt(priceText.replace(/[^\d]/g, ''), 10); // убираем "грн", оставляем число
+
+    // Формируем заказ
+    const order = {
+        type: 'catalog',
+        title: productTitle,
+        price: productPrice,
+        customerName: nameInput.value.trim(),
+        customerSurname: surnameInput.value.trim(),
+        customerPhone: phoneInput.value.trim(),
+        date: new Date().toLocaleString('uk-UA')
+    };
+
+    // Отправляем заказ на сервер
+    fetch('https://67ffe0dcb72e9cfaf7262e72.mockapi.io/basket', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(order)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Помилка при відправленні замовлення');
+        }
+        return response.json();
+    })
+    .then(data => {
+        formMessage.textContent = 'Дякуємо за замовлення!';
+        formMessage.className = 'success';
+        document.getElementById('order-form').reset();
+        setTimeout(function() {
+            document.getElementById('form-container').style.display = 'none';
+            formMessage.textContent = '';
+        }, 2000);
+    })
+    .catch(error => {
+        console.error('Помилка:', error);
+        formMessage.textContent = 'Не вдалося відправити замовлення. Спробуйте пізніше.';
+        formMessage.className = 'error';
+    });
+});     
+</script>

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="tablet.css" />
+        <link rel="stylesheet" href="mobile.css" />
+        <link rel="stylesheet" href="tw.css" />
+
+        <script src="customRingette.js" defer></script>
+        <title>TennisLab</title>
+    </head>
+    <body>
+        <header>
+            <div class="container--my">
+                <div class="header__logo">
+                    <a href="index.html" class="header__logo--tennis">
+                        <img src="img/logoTennis.png" alt="logo" />
+                    </a>
+                    <a href="basket.html"> <img src="img/ph_basket.png" width="45" alt="" /> </a>
+                </div>
+                <div>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="HockeySticksProduct.html">Каталог</a></li>
+                            <li class="nav--2"><a href="customRingette.html">Створити ракетку</a></li>
+                            <li class="nav--5"><a href="index.html#aboutUs">Про нас</a></li>
+                            <li><a href="#contact">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="pageItem">
+            <div class="container--my">
+                <div class="container__pageItem"><a href="index.html">Головна</a> / <span>Створити ракетку</span></div>
+            </div>
+        </div>
+        <section class="">
+            <div class="container--my">
+                <div>
+                    <div class="custom__top">
+                        <img class="customHockey--fon" src="img/logoTennis.png" width="70%" alt="" />
+                        <img class="customHockey--racket" src="img/біла-removebg-preview – копія.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="custom__panel">
+                    <a class="custom--active" href="">Вага(г)</a>
+                    <a href="">Баланс</a>
+                    <a href=" ">Розмір ручки</a>
+                    <a href=" ">Колір</a>
+                </div>
+            </div>
+            <div class="custom__panel--tablet">
+                <img id="customPanelTabletMinus" class="custom__panel--tablet--left" src="/img/tablet--line__left.svg" alt="" />
+                <a id="customPanelTabletName" class="custom--tablet__active" href="">Вага(г)</a>
+                <img id="customPanelTabletPlus" class="custom__panel--tablet--right" src="/img/tablet--line__right.svg" alt="" />
+            </div>
+
+            <div class="custom__panel--Grip">
+                <div class="container--my">
+                    <input class="display__none" type="radio" id="grip_1" />
+                    <label class="rad active__Grip active" for="grip_1">260</label>
+                    <input class="display__none" type="radio" id="grip_2" />
+                    <label class="rad active__Grip" for="grip_2">280 </label>
+                    <input class="display__none" type="radio" id="grip_3" />
+                    <label class="rad active__Grip" for="grip_3">300 </label>
+                    <input class="display__none" type="radio" id="grip_4" />
+                    <label class="rad active__Grip" for="grip_4">330 </label>
+                </div>
+            </div>
+            <div class="custom__panel--Flex">
+                <div class="container--my">
+                    <input class="display__none" type="radio" id="flex_1" />
+                    <label class="rad active__Flex active" for="flex_1">Баланс на голову (330+ мм)</label>
+                    <input class="display__none" type="radio" id="flex_2" />
+                    <label class="rad active__Flex" for="flex_2">Нейтральний баланс (320 мм)</label>
+                    <input class="display__none" type="radio" id="flex_3" />
+                    <label class="rad active__Flex" for="flex_3">Баланс на ручку (310 мм і менше)</label>
+                </div>
+            </div>
+            <div class="custom__panel--Kick__point">
+                <div class="container--my">
+                    <div class="custom__panel--Kick__point__container">
+                        <input class="display__none" type="radio" id="kickPoint_1" />
+                        <label class="custom__panel--LOW custom__panel--Kick__point__btn rad active" for="kickPoint_1">L0 (4.0")</label>
+                    </div>
+                    <div class="custom__panel--Kick__point__container">
+                        <input class="display__none" type="radio" id="kickPoint_2" />
+                        <label class="custom__panel--MID custom__panel--Kick__point__btn rad" for="kickPoint_2">L1 (4 1/8")</label>
+                    </div>
+                    <div class="custom__panel--Kick__point__container">
+                        <input class="display__none" type="radio" id="kickPoint_3" />
+                        <label class="custom__panel--HIGH custom__panel--Kick__point__btn rad" for="kickPoint_3">L2 (4 1/4")</label>
+                    </div>
+                    <div class="custom__panel--Kick__point__container">
+                        <input class="display__none" type="radio" id="kickPoint_3" />
+                        <label class="custom__panel--HIGH custom__panel--Kick__point__btn rad" for="kickPoint_3">L3 (4 3/8")</label>
+                    </div>
+
+                    <div class="custom__panel--Kick__point__container">
+                        <input class="display__none" type="radio" id="kickPoint_3" />
+                        <label class="custom__panel--HIGH custom__panel--Kick__point__btn rad" for="kickPoint_3">L4 (4 1/2")</label>
+                    </div>
+
+                    <div class="custom__panel--Kick__point__container">
+                        <input class="display__none" type="radio" id="kickPoint_3" />
+                        <label class="custom__panel--HIGH custom__panel--Kick__point__btn rad" for="kickPoint_3">L5 (4 5/8")</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom__panel--Color__scheme">
+                <div class="container--my">
+                    <select class="custom__panel--Color__scheme__color rad focus:outline-none" name="" id="colorSelect">
+                        <option id="logoOutline" value="Logo outline " selected>Колір корпуса</option>
+                    </select>
+                    <div class="custom__panel--Color__scheme__btn active">
+                        <input class="display__none" type="radio" id="color_1" />
+                        <label style="background-color: white" for="color_1 " class="custom__panel--Color__scheme--color active"></label>
+                        <label style="background-color: yellow" for="color_3 " class="custom__panel--Color__scheme--color"></label>
+                        <label style="background-color: green" for="color_3 " class="custom__panel--Color__scheme--color"></label>
+                        <label style="background-color: pink" for="color_3 " class="custom__panel--Color__scheme--color"></label>
+                        <label style="background-color: blue" for="color_3 " class="custom__panel--Color__scheme--color"></label>
+                        <label style="background-color: purple" for="color_3 " class="custom__panel--Color__scheme--color"></label>
+                    </div>
+                    <div class="custom__panel--Color__scheme__btn">
+                        <input class="display__none" type="radio" id="color_4" />
+                        <label style="background-color: #000000" for="color_4 " class="custom__panel--Color__fill--color active"></label>
+
+                        <button style="background-color: #e50000" class="custom__panel--Color__fill--color"></button>
+                        <button style="background-color: #c90101" class="custom__panel--Color__fill--color"></button>
+                    </div>
+                    <div class="custom__panel--Color__scheme__btn">
+                        <input class="display__none" type="radio" id="color_5" />
+                        <label style="background-color: #000000" for="color_5 " class="custom__panel--Color__errowsInside--color active"></label>
+
+                        <button style="background-color: #27b327" class="custom__panel--Color__errowsInside--color"></button>
+                        <button style="background-color: #c90101" class="custom__panel--Color__errowsInside--color"></button>
+                    </div>
+                    <div class="custom__panel--Color__scheme__btn">
+                        <input class="display__none" type="radio" id="color_6" />
+                        <label style="background-color: #000000" for="color_6" class="custom__panel--Color__errowsOutside--color active"></label>
+
+                        <button style="background-color: #ddd9ba80" class="custom__panel--Color__errowsOutside--color"></button>
+                        <button style="background-color: #d8e093" class="custom__panel--Color__errowsOutside--color"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="custom__panel--Shaft__Name__and__number">
+                <div class="container--my">
+                    <input class="custom__name--number" type="text" id="nameAndNumber" placeholder="Name and number" />
+                </div>
+            </div>
+        </section>
+        <section class="customization">
+            <div class="container--my">
+                <div class="customization__top">
+                    <h3>Кастомізація тенісної ракетки</h3>
+                    <p>
+                        Створи ракетку, яка ідеально підходить саме тобі. Обери індивідуальні параметри для максимально комфортної гри та повного контролю над кожним ударом: Вага (г): відчуй баланс сили та маневреності Баланс: налаштуй розподіл ваги під свій стиль гри Розмір ручки: для зручного
+                        хвату та впевненого контролю Колір: додай особистості — обери свій улюблений стиль
+                    </p>
+                    <hr />
+                </div>
+                <div class="customization--flex">
+                    <div class="customization__bottom">
+                        <hr />
+                        <p>Вага(г): <span id="customizationGrip">260</span></p>
+                        <hr />
+                        <p>Баланс: <span id="customizationFlex">Баланс на голову (330+ мм)</span></p>
+                        <hr />
+                        <p>Розмір ручки: <span id="customizationKickPoint">L0 (4.0")</span></p>
+                        <hr />
+                        <p>
+                            Колір:
+                            <button id="customizationColorScheme" class="custom__panel--Shaft__texture--color"></button>
+                        </p>
+                        <hr />
+                    </div>
+                </div>
+
+                <div class="custom__Buy">
+                    <a class="rad" href="##42324#"> Купити <img class="product--img" src="/img/system-uicons_cart.svg" alt="" /> </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="form-container" id="form-container" style="display: none">
+            <div class="form-content">
+                <button class="close-btn" id="close-btn">×</button>
+                <form id="order-form">
+                    <div>
+                        <label for="name">Ім'я</label>
+                        <input type="text" id="name" name="name" placeholder="Введіть імʼя" required />
+                    </div>
+
+                    <div>
+                        <label for="surname">Прізвище</label>
+                        <input type="text" id="surname" name="surname" placeholder="Введіть Прізвище" required />
+                    </div>
+
+                    <div>
+                        <label for="phone">Номер телефону</label>
+                        <input type="text" id="phone" name="phone" placeholder="+38(0__)___-__-__" required />
+                    </div>
+
+                    <div id="form-message"></div>
+                    <button type="submit">Надіслати</button>
+                </form>
+            </div>
+        </div>
+
+        <footer id="contact">
+            <div class="footer--padding">
+                <div class="container--my">
+                    <div class="footer__navigation flex--gap">
+                        <li><a href="HockeySticksProduct.html">Каталог</a></li>
+                        <li class="nav--2"><a href="customRingette.html">Створити ракетку</a></li>
+                        <li class="nav--5"><a href="index.html#aboutUs">Про нас</a></li>
+                        <li><a href="#contact">Контакти</a></li>
+                    </div>
+                    <div class="footer__info">
+                        <div>
+                            <div class="flex--gap">
+                                <a href="">+380 (63) 648 36 11</a>
+                                <a href="">tennis@gmail.com</a>
+                            </div>
+                        </div>
+                        <a href="index.html">
+                            <img src="img/logoTennis.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
+<script>
+    // Отримуємо елементи один раз при завантаженні сторінки
+    const formContainer = document.getElementById('form-container');
+    const closeBtn = document.getElementById('close-btn');
+    const orderForm = document.getElementById('order-form');
+    const formMessage = document.getElementById('form-message');
+
+    // Функція для закриття модального вікна
+    function closeModal() {
+        formContainer.style.display = 'none';
+        // Очищаємо повідомлення при закритті
+        formMessage.textContent = '';
+        formMessage.className = '';
+    }
+
+    // Функція для показу повідомлення
+    function showMessage(message, isError = false) {
+        formMessage.textContent = message;
+        formMessage.className = isError ? 'error' : 'success';
+    }
+
+    // Додаємо обробник для кнопки закриття один раз
+    closeBtn.addEventListener('click', closeModal);
+
+    // Функціонал навігації між панелями кастомізації
+    const panels = {
+        'Вага(г)': '.custom__panel--Grip',
+        'Баланс': '.custom__panel--Flex',
+        'Розмір ручки': '.custom__panel--Kick__point',
+        'Колір': '.custom__panel--Color__scheme',
+    };
+
+    // Функція для приховування всіх панелей
+    function hideAllPanels() {
+        Object.values(panels).forEach((panel) => {
+            document.querySelector(panel).style.display = 'none';
+        });
+    }
+
+    // Функція для показу конкретної панелі
+    function showPanel(panelClass) {
+        hideAllPanels();
+        document.querySelector(panelClass).style.display = 'block';
+    }
+
+    // Додаємо обробники для навігаційних посилань
+    document.querySelectorAll('.custom__panel a').forEach((link) => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // Видаляємо активний клас з усіх посилань
+            document.querySelectorAll('.custom__panel a').forEach((a) => {
+                a.classList.remove('custom--active');
+            });
+
+            // Додаємо активний клас поточному посиланню
+            this.classList.add('custom--active');
+
+            // Показуємо відповідну панель
+            const panelToShow = panels[this.textContent.trim()];
+            if (panelToShow) {
+                showPanel(panelToShow);
+            }
+        });
+    });
+
+    // Показуємо першу панель при завантаженні сторінки
+    showPanel('.custom__panel--Grip');
+
+    // Обробники для вибору параметрів
+    // Вага
+    document.querySelectorAll('.active__Grip').forEach((label) => {
+        label.addEventListener('click', function () {
+            // Видаляємо активний клас з усіх лейблів
+            document.querySelectorAll('.active__Grip').forEach((l) => l.classList.remove('active'));
+            // Додаємо активний клас обраному лейблу
+            this.classList.add('active');
+            // Оновлюємо значення в підсумку
+            document.getElementById('customizationGrip').textContent = this.textContent;
+        });
+    });
+
+    // Баланс
+    document.querySelectorAll('.active__Flex').forEach((label) => {
+        label.addEventListener('click', function () {
+            document.querySelectorAll('.active__Flex').forEach((l) => l.classList.remove('active'));
+            this.classList.add('active');
+            document.getElementById('customizationFlex').textContent = this.textContent;
+        });
+    });
+
+    // Розмір ручки
+    document.querySelectorAll('.custom__panel--Kick__point__btn').forEach((label) => {
+        label.addEventListener('click', function () {
+            document.querySelectorAll('.custom__panel--Kick__point__btn').forEach((l) => l.classList.remove('active'));
+            this.classList.add('active');
+            document.getElementById('customizationKickPoint').textContent = this.textContent;
+        });
+    });
+
+    // Колір
+    document.querySelectorAll('.custom__panel--Color__scheme--color').forEach((label) => {
+        label.addEventListener('click', function () {
+            // Оновлюємо активний клас для кольорів
+            document.querySelectorAll('.custom__panel--Color__scheme--color').forEach((l) => l.classList.remove('active'));
+            this.classList.add('active');
+
+            // Оновлюємо колір в підсумку
+            document.getElementById('customizationColorScheme').style.backgroundColor = this.style.backgroundColor;
+
+            // Змінюємо зображення ракетки відповідно до кольору
+            const racketImage = document.querySelector('.customHockey--racket');
+
+            // Отримуємо колір елемента
+            const computedStyle = window.getComputedStyle(this);
+            const selectedColor = computedStyle.backgroundColor;
+
+            // Визначаємо назву файлу на основі кольору
+            let colorName = 'white'; // значення за замовчуванням
+
+            switch (selectedColor) {
+                case 'rgb(255, 255, 255)': // білий
+                    colorName = 'white';
+                    break;
+                case 'rgb(255, 255, 0)': // жовтий
+                    colorName = 'yellow';
+                    break;
+                case 'rgb(0, 128, 0)': // зелений
+                    colorName = 'green';
+                    break;
+                case 'rgb(255, 192, 203)': // рожевий
+                    colorName = 'pink';
+                    break;
+                case 'rgb(0, 0, 255)': // синій
+                    colorName = 'blue';
+                    break;
+                case 'rgb(128, 0, 128)': // фіолетовий
+                    colorName = 'purple';
+                    break;
+            }
+
+            // Встановлюємо нове зображення
+            racketImage.src = `img/${colorName}.png`;
+
+            // Для відладки
+            console.log('Selected color:', selectedColor);
+            console.log('Color name:', colorName);
+            console.log('New image src:', racketImage.src);
+        });
+    });
+
+    // Обробник для кнопки "Купити"
+    document.querySelector('.custom__Buy').addEventListener('click', (e) => {
+        e.preventDefault();
+
+        // Отримуємо дані про кастомізовану ракетку
+        const customizationGrip = document.getElementById('customizationGrip')?.textContent.trim() || '';
+        const customizationFlex = document.getElementById('customizationFlex')?.textContent.trim() || '';
+        const customizationKickPoint = document.getElementById('customizationKickPoint')?.textContent.trim() || '';
+        const customizationColorScheme = window.getComputedStyle(document.getElementById('customizationColorScheme'))?.backgroundColor || '';
+        const customizationNameAndNumber = document.getElementById('customizationNameAndNumber')?.textContent.trim() || '';
+
+        // Очищаємо форму та повідомлення перед відкриттям
+        orderForm.reset();
+        formMessage.textContent = '';
+        formMessage.className = '';
+
+        // Показуємо модальне вікно
+        formContainer.style.display = 'flex';
+    });
+
+    // Функція для валідації імені та прізвища
+    function validateName(name) {
+        return /^[А-ЯІЇЄҐа-яіїєґ']{2,}$/.test(name);
+    }
+
+    function isUkrainianLetters(str) {
+        return /^[А-ЯІЇЄҐа-яіїєґ']*$/.test(str);
+    }
+
+    // Функція для валідації номера телефону
+    function validatePhone(phone) {
+        const phoneRegex = /^\+?380\d{9}$/;
+        return phoneRegex.test(phone);
+    }
+
+    // Функція для показу помилки під конкретним полем
+    function showFieldError(inputElement, message) {
+        // Видаляємо попередню помилку, якщо вона є
+        const existingError = inputElement.parentElement.querySelector('.field-error');
+        if (existingError) {
+            existingError.remove();
+        }
+
+        // Створюємо і додаємо нове повідомлення про помилку
+        const errorDiv = document.createElement('div');
+        errorDiv.className = 'field-error';
+        errorDiv.textContent = message;
+        inputElement.parentElement.appendChild(errorDiv);
+        inputElement.classList.add('error-input');
+    }
+
+    // Функція для очищення помилки поля
+    function clearFieldError(inputElement) {
+        const errorDiv = inputElement.parentElement.querySelector('.field-error');
+        if (errorDiv) {
+            errorDiv.remove();
+        }
+        inputElement.classList.remove('error-input');
+    }
+
+    // Додаємо обробники для валідації в реальному часі
+    const nameInput = document.getElementById('name');
+    const surnameInput = document.getElementById('surname');
+    const phoneInput = document.getElementById('phone');
+
+    nameInput.addEventListener('input', function () {
+        if (this.value.length > 0 && this.value.length < 2) {
+            showFieldError(this, 'Мінімум 2 українські літери');
+        } else if (this.value.length >= 2 && !isUkrainianLetters(this.value)) {
+            showFieldError(this, 'Тільки українські літери');
+        } else if (this.value && !validateName(this.value)) {
+            showFieldError(this, 'Тільки українські літери');
+        } else {
+            clearFieldError(this);
+        }
+    });
+
+    surnameInput.addEventListener('input', function () {
+        if (this.value.length > 0 && this.value.length < 2) {
+            showFieldError(this, 'Мінімум 2 українські літери');
+        } else if (this.value.length >= 2 && !isUkrainianLetters(this.value)) {
+            showFieldError(this, 'Тільки українські літери');
+        } else if (this.value && !validateName(this.value)) {
+            showFieldError(this, 'Тільки українські літери');
+        } else {
+            clearFieldError(this);
+        }
+    });
+
+    phoneInput.addEventListener('input', function () {
+        if (this.value.trim() !== '') {
+            if (!validatePhone(this.value.trim())) {
+                showFieldError(this, 'Введіть номер у форматі +380XXXXXXXXX');
+            } else {
+                clearFieldError(this);
+            }
+        } else {
+            clearFieldError(this);
+        }
+    });
+
+    orderForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // Очищаємо всі попередні помилки
+        formMessage.textContent = '';
+        formMessage.className = '';
+
+        // Отримуємо дані з форми
+        const name = nameInput.value.trim();
+        const surname = surnameInput.value.trim();
+        const phone = phoneInput.value.trim();
+
+        let errors = [];
+
+        // Валідація імені
+        if (!name) {
+            errors.push("Введіть ім'я");
+            showFieldError(nameInput, "Це поле обов'язкове");
+        } else if (name.length < 2) {
+            errors.push('Мінімум 2 українські літери');
+            showFieldError(nameInput, 'Мінімум 2 українські літери');
+        } else if (!isUkrainianLetters(name) || !validateName(name)) {
+            errors.push('Тільки українські літери');
+            showFieldError(nameInput, 'Тільки українські літери');
+        } else {
+            clearFieldError(nameInput);
+        }
+
+        // Валідація прізвища
+        if (!surname) {
+            errors.push('Введіть прізвище');
+            showFieldError(surnameInput, "Це поле обов'язкове");
+        } else if (surname.length < 2) {
+            errors.push('Мінімум 2 українські літери');
+            showFieldError(surnameInput, 'Мінімум 2 українські літери');
+        } else if (!isUkrainianLetters(surname) || !validateName(surname)) {
+            errors.push('Тільки українські літери');
+            showFieldError(surnameInput, 'Тільки українські літери');
+        } else {
+            clearFieldError(surnameInput);
+        }
+
+        // Валідація телефону
+        if (!phone) {
+            errors.push('Введіть номер телефону');
+            showFieldError(phoneInput, "Це поле обов'язкове");
+        } else if (!validatePhone(phone)) {
+            errors.push('Некоректний номер телефону');
+            showFieldError(phoneInput, 'Введіть номер у форматі +380XXXXXXXXX');
+        } else {
+            clearFieldError(phoneInput);
+        }
+
+        // Якщо є помилки, зупиняємо обробку
+        if (errors.length > 0) {
+            showMessage(errors.join('. '), true);
+            return;
+        }
+
+        // Якщо все добре — формуємо замовлення
+        const order = {
+            id: Date.now(),
+            type: 'custom',
+            title: 'Кастомізована ракетка',
+            price: '-',
+            weight: document.getElementById('customizationGrip')?.textContent.trim() || '',
+            balance: document.getElementById('customizationFlex')?.textContent.trim() || '',
+            handleSize: document.getElementById('customizationKickPoint')?.textContent.trim() || '',
+            color: window.getComputedStyle(document.getElementById('customizationColorScheme'))?.backgroundColor || '',
+            customerName: name,
+            customerSurname: surname,
+            customerPhone: phone,
+            date: new Date().toLocaleString('uk-UA'),
+        };
+
+        // Відправляємо замовлення на сервер
+        fetch('https://67ffe0dcb72e9cfaf7262e72.mockapi.io/basket', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(order),
+        })
+            .then((response) => {
+                if (!response.ok) throw new Error('Помилка при відправленні замовлення');
+                return response.json();
+            })
+            .then((data) => {
+                showMessage("Дякуємо за замовлення! Наш менеджер зв'яжеться з вами найближчим часом");
+            })
+            .catch((error) => {
+                console.error('Помилка:', error);
+                showMessage('Сталася помилка при надсиланні замовлення. Спробуйте пізніше', true);
+            });
+
+        // Очищаємо форму
+        orderForm.reset();
+
+        // Закриваємо форму через 3 секунди
+        setTimeout(closeModal, 3000);
+    });
+</script>

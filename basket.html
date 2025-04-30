@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TennisLab - Кошик</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="tablet.css" />
+        <link rel="stylesheet" href="mobile.css" />
+        <link rel="stylesheet" href="tw.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container--my">
+                <div class="header__logo">
+                    <a href="index.html" class="header__logo--tennis">
+                        <img src="img/logoTennis.png" alt="logo" />
+                    </a>
+                    <a href="basket.html"> <img src="img/ph_basket.png" width="45" alt="" /> </a>
+                </div>
+                <div>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="HockeySticksProduct.html">Каталог</a></li>
+                            <li class="nav--2"><a href="customRingette.html">Створити ракетку</a></li>
+                            <li class="nav--5"><a href="index.html#aboutUs">Про нас</a></li>
+                            <li><a href="#contact">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="pageItem">
+            <div class="container--my">
+                <div class="container__pageItem"><a href="index.html">Головна</a> / <span>Кошик</span></div>
+            </div>
+        </div>
+        <section class="basket-section">
+            <div class="container--my">
+                <h1>Кошик</h1>
+                <div id="orders-container">
+                    <!-- Тут будуть відображатися замовлення -->
+                </div>
+            </div>
+        </section>
+        <footer id="contact">
+            <div class="footer--padding">
+                <div class="container--my">
+                    <div class="footer__navigation flex--gap">
+                        <li><a href="HockeySticksProduct.html">Каталог</a></li>
+                        <li class="nav--2"><a href="customRingette.html">Створити ракетку</a></li>
+                        <li class="nav--5"><a href="index.html#aboutUs">Про нас</a></li>
+                        <li><a href="#contact">Контакти</a></li>
+                    </div>
+                    <div class="footer__info">
+                        <div>
+                            <div class="flex--gap">
+                                <a href="">+380 (63) 648 36 11</a>
+                                <a href="">tennis@gmail.com</a>
+                            </div>
+                        </div>
+                        <a href="index.html">
+                            <img src="img/logoTennis.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            // Функція для відображення замовлень
+            function displayOrders() {
+                const ordersContainer = document.getElementById('orders-container');
+
+                fetch('https://67ffe0dcb72e9cfaf7262e72.mockapi.io/basket')
+                    .then((response) => response.json())
+                    .then((orders) => {
+                        if (orders.length === 0) {
+                            ordersContainer.innerHTML = '<p class="empty-basket">Ваш кошик порожній</p>';
+                            return;
+                        }
+
+                        let ordersHTML = '';
+                        orders.forEach((order, index) => {
+                            if (order.type === 'custom') {
+                                // Відображення кастомізованої ракетки
+                                ordersHTML += `
+                        <div class="order-item">
+                            <div class="order-header">
+                                <h3>Заказ номер ${index + 1}</h3>
+                                <span class="order-date">${order.date}</span>
+                            </div>
+                            <div class="order-details">
+                                <p><strong>${order.title}</strong></p>
+                                <p>Вага (г): ${order.weight}</p>
+                                <p>Баланс: ${order.balance}</p>
+                                <p>Розмір ручки: ${order.handleSize}</p>
+                                <div class="color-display">
+                                    <span>Колір:</span>
+                                    <span class="color-sample" style="background-color: ${order.color}"></span>
+                                </div>
+                                <div class="customer-info">
+                                    <p>Замовник: ${order.customerName} ${order.customerSurname}</p>
+                                    <p>Телефон: ${order.customerPhone}</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                            } else {
+                                // Відображення готової ракетки з каталогу
+                                ordersHTML += `
+                        <div class="order-item">
+                            <div class="order-header">
+                                <h3>Заказ номер ${index + 1}</h3>
+                                <span class="order-date">${order.date}</span>
+                            </div>
+                            <div class="order-details">
+                                <p><strong>${order.title}</strong></p>
+                                <p>Ціна: ${order.price} грн</p>
+                                <div class="customer-info">
+                                    <p>Замовник: ${order.customerName} ${order.customerSurname}</p>
+                                    <p>Телефон: ${order.customerPhone}</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                            }
+                        });
+
+                        ordersContainer.innerHTML = ordersHTML;
+                    })
+                    .catch((error) => {
+                        console.error('Помилка при отриманні замовлень:', error);
+                        ordersContainer.innerHTML = '<p class="empty-basket">Не вдалося завантажити замовлення</p>';
+                    });
+            }
+
+            // Викликаємо функцію при завантаженні сторінки
+            document.addEventListener('DOMContentLoaded', displayOrders);
+        </script>
+    </body>
+</html>
